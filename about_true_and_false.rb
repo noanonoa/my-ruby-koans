@@ -21,7 +21,10 @@ class AboutTrueAndFalse < Neo::Koan
     assert_equal :false_stuff, truth_value(nil)
   end
 
-# Only `false` and `nil` values return false in Ruby.  Unlike most other programming languages, values such as zero, empty arrays, empty objects, all return true because they technically "exist."
+# Only `false` and `nil` values return false in Ruby.
+# Unlike most other programming languages,
+# values such as zero, empty arrays, empty objects,
+# all return true because they technically "exist."
 
   def test_everything_else_is_treated_as_true
     assert_equal :true_stuff, truth_value(1)
